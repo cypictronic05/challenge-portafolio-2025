@@ -1,0 +1,189 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  header {
+    background: #000;
+    padding: 1rem;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+.hero .links{
+    color: #FFF;
+}
+
+  .nav-links li a {
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .dark-theme {
+    background-color: #0000FF;
+    color: #ffffff;
+  }
+  
+  .light-theme {
+    background-color: #FFFFFF;
+    color: #FFF;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: inherit;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #3498db;
+  }
+  
+  .theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .theme-btn:hover {
+    color: #3498db;
+  }
+
+  /* Estilo en modo oscuro */
+  .dark-theme .links {
+    color: #000;
+  }
+  
+  .dark-theme .links:hover {
+    background-color: #ffffff;
+  }
+  
+  /* Estilo en modo claro */
+  .light-theme .links {
+    color: #000;
+  }
+  
+  .light-theme .links:hover {
+    color: #ffffff;
+  }  
+    
+
+  .hero {
+    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
+    padding: 2rem 1rem;
+  }
+  
+  .hero-content {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Espacia entre texto y foto */
+    gap: 1rem; /* Espaciado entre texto y la imagen */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+  }
+  
+  .hero-text {
+    flex: 1 1 60%; /* El texto ocupa el 60% del ancho */
+  }
+  
+  .profile-photo {
+    flex: 0 1 150px; /* La imagen ocupa un tamaño fijo */
+    max-width: 300px;
+    border-radius: 50%;
+  }
+  
+  
+  .about, .skills, .hobbies, .experiencia, .proyectos, .formacion{
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .skill, .hobby {
+    flex: 1 1 calc(25% - 1rem);
+    padding: 1rem;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+  }
+
+  .hero .hero-content .hero-text .links{
+    background-color: aquamarine;
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+
+  .hero .hero-content .hero-text h1{
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  p{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btn{
+    color: #00FFFF;
+  }
+
+  .project-buttons{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .project h3{
+    margin-top: 0px;
+  }
+
+ 

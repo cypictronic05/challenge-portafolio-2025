@@ -1,23 +1,118 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Portafolio Simón Vitriago</title>
 </head>
-<body>
+<body class="dark-theme">
     <header>
-        <nav>
-            <!-- Navegación -->
+        <nav class="navbar">
+            <div class="logo">Simón Vitriago</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="mailto:cypictronic@gmail.com"><strong>cypictronic@gmail.com</strong> </a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn">
+                <span id="theme-icon">🌙</span>
+            </button>  
         </nav>
-    </header>
+      
+    </header> 
     <main>
-        <section>
-            <!-- Sección principal -->
-        </section>
+        <section class="hero">
+            <div class="hero-content">
+              <div class="hero-text">
+                <h1>Hola, mi nombre es Simón Vitriago y desarrollo sitios webs y programación de microcontroladores</h1>
+                <p>Formado como ingeniero electricista y actualmente participando del proyecto Oracle ONE en Alura Latam como desarrollador Front-End</p>
+                <div class="links">
+                  <a href="#">GitHub</a>
+                  <a href="#">LinkedIn</a>
+                  <a href="#">Instagram</a>
+                  <a href="#">CV</a>
+                </div>
+              </div>
+              <img src="img/profile.jpeg" alt="Foto de Simón Vitriago" class="profile-photo">
+            </div>
+          </section>
+          
+
+
+        <section id="about" class="about">
+            <h2>Sobre mí</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit...</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit...</p>
+            <img src="firma.png" alt="Firma de Fulana de Tal">
+          </section>
+      
+          <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+              <div class="skill">HTML5</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">PHP</div>
+              <div class="skill">Node.js</div>
+              <div class="skill">React</div>
+              <div class="skill">CSS</div>
+            </div>
+          </section>
+      
+          <section id="hobbies" class="hobbies">
+            <h2>Hobbies</h2>
+            <div class="grid">
+              <div class="hobby">Patinaje</div>
+              <div class="hobby">Tocar bajo</div>
+              <div class="hobby">Oír música</div>
+              <div class="hobby">Ver series</div>
+              <div class="hobby">Cocinar</div>
+              <div class="hobby">Tomar fotos</div>
+            </div>
+          </section>      
+          
+          <section id="experiencia" class="experiencia">
+            <h2>Experiencia laboral</h2>
+            <article>
+              <h3>Creador de Contenido - Twitch</h3>
+              <p>Actualmente...</p>
+            </article>
+            <article>
+              <h3>Principal Frontend Engineer - Adevinta Spain</h3>
+              <p>Septiembre 2022</p>
+            </article>
+          </section>
+      
+          <section id="proyectos" class="proyectos">
+            <h2>Proyectos</h2>
+            <div class="project">
+              <img src="img/proyectos/inversiones.png" alt="Proyecto 1" width="400">
+              <h3>Desarrollado con HTML - CSS - JavaScript</h3>
+              <div class="project-buttons">
+                <!-- <a href="#" class="btn">Code</a> -->
+                <a href="https://inversiones-manvir-2024.vercel.app/" class="btn" target="_blank">View</a>
+              </div>
+            </div>
+          </section>       
+          
+          <section id="proyectos" class="proyectos">
+            <div class="project">
+              <img src="img/proyectos/sergiorojas.png" alt="Proyecto 1" width="400">
+              <h3>Desarrollado con HTML - CSS - JavaScript - NodeJS</h3>
+              <div class="project-buttons">
+                <a href="https://github.com/cypictronic05/sergiorojascreaciones01" class="btn" target="_blank">Code</a>
+                <a href="https://sergiorojascreaciones.vercel.app/" class="btn" target="_blank">View</a>
+              </div>
+            </div>  
+          </section>            
     </main>
     <footer>
-        <!-- Pie de página -->
-    </footer>
+        <p>© 2025 Portafolio de Simón Vitriago. Todos los derechos reservados.</p>
+      </footer>
+      <script src="app.js"></script>
 </body>
 </html>
