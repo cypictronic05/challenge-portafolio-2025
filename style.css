@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     transition: background-color 0.3s ease, color 0.3s ease;
+    height: 100vh;
   }
   
   header {
@@ -41,7 +42,7 @@ body {
   
   .light-theme {
     background-color: #FFFFFF;
-    color: #FFF;
+    color: #000;
   }
   
   .navbar {
@@ -101,11 +102,9 @@ body {
   .light-theme .links:hover {
     color: #ffffff;
   }  
-    
-
-  .hero {
-    text-align: left; /* Asegura que el texto esté alineado a la izquierda */
-    padding: 2rem 1rem;
+ 
+  .hero{
+    padding-left: 50px;
   }
   
   .hero-content {
@@ -117,12 +116,13 @@ body {
   }
   
   .hero-text {
-    flex: 1 1 60%; /* El texto ocupa el 60% del ancho */
+    flex: 1 1 40%; /* El texto ocupa el 60% del ancho */
+    flex-wrap: nowrap;
   }
   
   .profile-photo {
-    flex: 0 1 150px; /* La imagen ocupa un tamaño fijo */
-    max-width: 300px;
+    flex: 1 1 150px; /* La imagen ocupa un tamaño fijo */
+    max-width: 200px;
     border-radius: 50%;
   }
   
@@ -159,16 +159,19 @@ body {
     color: #FFFFFF;
   }
 
+
   .hero .hero-content .hero-text h1{
     font-size: 30px;
     color: #FFFFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
   }
 
   p{
     font-size: 20px;
     color: #FFFFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
   }
 
   .btn{
@@ -185,5 +188,31 @@ body {
   .project h3{
     margin-top: 0px;
   }
+
+  .forma, .proyectos-realizados{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .about, .presentacion__contenido__articulo{
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
+.about{
+justify-content: center;
+}
+
+span{
+  color: #FFFF00;
+}
+
 
  
