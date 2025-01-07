@@ -164,10 +164,6 @@ body.light-theme .highlight {
   color: #ffffff;
 }  
 
-.hero{
-  padding-left: 50px;
-}
-
 .hero-content {
   display: flex;
   align-items: center; /* Alinea verticalmente los elementos */
@@ -191,7 +187,7 @@ body.light-theme .highlight {
 
 
 .about, .skills, .hobbies, .experiencia, .proyectos, .formacion{
-  padding: 2rem 1rem;
+  /* padding: 2rem 1rem; */
   text-align: center;
 }
 
@@ -214,6 +210,7 @@ footer {
   padding: 1rem;
   background: #000;
   color: #fff;
+  margin-top: 10px;
 }
 
 .hero .hero-content .hero-text .links{
@@ -222,21 +219,6 @@ footer {
   color: #FFFFFF;
 }
 
-
-.hero .hero-content .hero-text h1{
-  font-size: 40px;
-  color: #FFFFFF;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 50px;
-  min-width: 300px;
-}
-
-p{
-  font-size: 30px;
-  color: #FFFFFF;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding-left: 50px;
-}
 
 .btn{
   color: #FFFFFF;
@@ -266,16 +248,7 @@ p{
   align-items: center;
 }
 
-.about, .presentacion__contenido__articulo{
-  width: 90%;
-  font-size: 1.5rem;
-  text-align: justify;
-  justify-content: center;
-  align-items: center;
-  padding-left: 50px;
-  font-weight: bold;
-  line-height: 1.5;
-}
+
 
 .about{
 justify-content: center;
@@ -306,6 +279,155 @@ font-weight: bold;
 figcaption{
 font-size: 30px;
 font-weight: bold;
+}
+
+/* === Estilos para Desktop (ancho mínimo de 1440px) === */
+@media (min-width: 1440px) {
+
+  .nav-links{
+    display: flex;
+   }
+
+  .about, .presentacion__contenido__articulo{
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+
+  .hero{
+    padding-left: 50px;
+  }  
+
+  .hero .hero-content .hero-text h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+    min-width: 300px;
+  }  
+
+  p{
+    font-size: 25px;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+  }    
+ 
+}
+
+/* === Estilos para Tablet (ancho entre 768px y 1439px) === */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .nav-links{
+    display: none;
+   }  
+
+   .hero-content{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+   .forma, .proyectos-realizados{
+    display: flex;
+    flex-direction: column;
+   }
+
+
+   .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin-left: 20px;
+   }   
+
+   footer{
+    font-size: 12px;
+   }   
+
+   .about, .presentacion__contenido__articulo, .hero-text{
+    width: 95%;
+    font-size: 1.5rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 20px;
+  }    
+
+
+  .hero .hero-content .hero-text .links p{
+    background-color: aquamarine;
+    font-size: 24px;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+  }
+
+}
+
+/* === Estilos para Mobile (ancho máximo de 767px) === */
+@media (max-width: 767px) {
+   .nav-links{
+    display: none;
+   }
+
+   .hero-content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+   }
+
+   .forma, .proyectos-realizados{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin-left: 10px;
+   }
+
+   footer{
+    font-size: 12px;
+   }
+
+   .about {
+    width: 95%;
+    font-size: 1.2rem;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-left: 10px;
+  }   
+
+
+  .hero .hero-content .hero-text .links .presentacion__contenido__articulo{
+    background-color: aquamarine;
+    font-size: 24px;
+    color: #FFFFFF;
+    justify-content: center;
+    text-align: center;
+  }
+
+
 }
 
 
