@@ -30,6 +30,13 @@ body {
     color: #FFF;
 }
 
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
   .nav-links li a {
     text-decoration: none;
     color: #FFF;
@@ -43,6 +50,48 @@ body {
   .light-theme {
     background-color: #FFFFFF;
     color: #000;
+  }
+
+  body.dark-theme .highlight {
+    color: #FFFF00;
+  }
+
+  body.light-theme .skill{
+    background-color: #000;
+    color: #FFF;
+    font-weight: bold;
+  }
+
+  body.light-theme .hobby{
+    border-color: #000;
+    color: #000;
+    font-weight: bold;
+  }
+
+  body.dark-theme  .presentacion__contenido__articulo{
+    color: #FFFFFF;
+  }
+
+  body.dark-theme .hero-text h1{
+    color: #FFFFFF;
+  }
+
+  body.light-theme  .presentacion__contenido__articulo{
+    color: #000;
+  }
+
+  body.light-theme .hero-text h1{
+    color: #000 !important;
+  }
+
+  body.light-theme .hero-text p{
+    color: #000 !important;
+  }
+  
+  
+
+  body.light-theme .highlight {
+    color: #0000FF;
   }
   
   .navbar {
@@ -89,6 +138,18 @@ body {
   .dark-theme .links {
     color: #000;
   }
+
+  .dark-theme .btn{
+    color: #FFFF00;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .light-theme .btn{
+    color: #FF0000;
+    font-size: 20px;
+    font-weight: bold;
+  }  
   
   .dark-theme .links:hover {
     background-color: #ffffff;
@@ -121,9 +182,11 @@ body {
   }
   
   .profile-photo {
-    flex: 1 1 150px; /* La imagen ocupa un tamaño fijo */
+    flex: 10 10 150px; /* La imagen ocupa un tamaño fijo */
     max-width: 200px;
     border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 20px;
   }
   
   
@@ -161,21 +224,23 @@ body {
 
 
   .hero .hero-content .hero-text h1{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+    min-width: 300px;
+  }
+
+  p{
     font-size: 30px;
     color: #FFFFFF;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 50px;
   }
 
-  p{
-    font-size: 20px;
-    color: #FFFFFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 50px;
-  }
-
   .btn{
-    color: #00FFFF;
+    color: #FFFFFF;
+    font-size: 20px;
   }
 
   .project-buttons{
@@ -189,11 +254,16 @@ body {
     margin-top: 0px;
   }
 
+  .project{
+    margin-top: 20px;
+  }
+
   .forma, .proyectos-realizados{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     justify-content: center;
+    align-items: center;
   }
 
   .about, .presentacion__contenido__articulo{
@@ -204,6 +274,7 @@ body {
     align-items: center;
     padding-left: 50px;
     font-weight: bold;
+    line-height: 1.5;
 }
 
 .about{
@@ -213,6 +284,30 @@ justify-content: center;
 span{
   color: #FFFF00;
 }
+
+.skill{
+  background-color: #FFFFFF;
+  color: #000;
+  font-weight: bold;
+}
+
+.skill:hover, .hobby:hover{
+  background-color: #FFFF00;
+  color: #000;
+  font-weight: bold;
+}
+
+body.light-theme .skill:hover, .hobby:hover{
+  background-color: #FFFF00;
+  color: #000;
+  font-weight: bold;
+}
+
+figcaption{
+  font-size: 30px;
+  font-weight: bold;
+}
+
 
 
  
