@@ -1,280 +1,280 @@
 /* styles.css */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    height: 100vh;
-  }
-  
-  header {
-    background: #000;
-    padding: 1rem;
-    color: #fff;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 100vh;
+}
+
+header {
+  background: #000;
+  padding: 1rem;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
 .hero .links{
-    color: #FFF;
+  color: #FFF;
 }
 
 h2{
-  text-align: center;
-  font-size: 40px;
-  font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-  .nav-links li a {
-    text-decoration: none;
-    color: #FFF;
-  }
-  
-  .dark-theme {
-    background-color: #0000FF;
-    color: #ffffff;
-  }
-  
-  .light-theme {
-    background-color: #FFFFFF;
-    color: #000;
-  }
+.nav-links li a {
+  text-decoration: none;
+  color: #FFF;
+}
 
-  body.dark-theme .highlight {
-    color: #FFFF00;
-  }
+.dark-theme {
+  background-color: #0000FF;
+  color: #ffffff;
+}
 
-  body.light-theme .skill{
-    background-color: #000;
-    color: #FFF;
-    font-weight: bold;
-  }
+.light-theme {
+  background-color: #FFFFFF;
+  color: #000;
+}
 
-  body.light-theme .hobby{
-    border-color: #000;
-    color: #000;
-    font-weight: bold;
-  }
+body.dark-theme .highlight {
+  color: #FFFF00;
+}
 
-  body.dark-theme  .presentacion__contenido__articulo{
-    color: #FFFFFF;
-  }
+body.light-theme .skill{
+  background-color: #000;
+  color: #FFF;
+  font-weight: bold;
+}
 
-  body.dark-theme .hero-text h1{
-    color: #FFFFFF;
-  }
+body.light-theme .hobby{
+  border-color: #000;
+  color: #000;
+  font-weight: bold;
+}
 
-  body.light-theme  .presentacion__contenido__articulo{
-    color: #000;
-  }
+body.dark-theme  .presentacion__contenido__articulo{
+  color: #FFFFFF;
+}
 
-  body.light-theme .hero-text h1{
-    color: #000 !important;
-  }
+body.dark-theme .hero-text h1{
+  color: #FFFFFF;
+}
 
-  body.light-theme .hero-text p{
-    color: #000 !important;
-  }
-  
-  
+body.light-theme  .presentacion__contenido__articulo{
+  color: #000;
+}
 
-  body.light-theme .highlight {
-    color: #0000FF;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: inherit;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #3498db;
-  }
-  
-  .theme-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: inherit;
-    transition: color 0.3s ease;
-  }
-  
-  .theme-btn:hover {
-    color: #3498db;
-  }
+body.light-theme .hero-text h1{
+  color: #000 !important;
+}
 
-  /* Estilo en modo oscuro */
-  .dark-theme .links {
-    color: #000;
-  }
-
-  .dark-theme .btn{
-    color: #FFFF00;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-  .light-theme .btn{
-    color: #FF0000;
-    font-size: 20px;
-    font-weight: bold;
-  }  
-  
-  .dark-theme .links:hover {
-    background-color: #ffffff;
-  }
-  
-  /* Estilo en modo claro */
-  .light-theme .links {
-    color: #000;
-  }
-  
-  .light-theme .links:hover {
-    color: #ffffff;
-  }  
- 
-  .hero{
-    padding-left: 50px;
-  }
-  
-  .hero-content {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    justify-content: space-between; /* Espacia entre texto y foto */
-    gap: 1rem; /* Espaciado entre texto y la imagen */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
-  }
-  
-  .hero-text {
-    flex: 1 1 40%; /* El texto ocupa el 60% del ancho */
-    flex-wrap: nowrap;
-  }
-  
-  .profile-photo {
-    flex: 10 10 150px; /* La imagen ocupa un tamaño fijo */
-    max-width: 200px;
-    border-radius: 50%;
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  
-  
-  .about, .skills, .hobbies, .experiencia, .proyectos, .formacion{
-    padding: 2rem 1rem;
-    text-align: center;
-  }
-
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-  }
-  
-  .skill, .hobby {
-    flex: 1 1 calc(25% - 1rem);
-    padding: 1rem;
-    border: 1px solid #FFFFFF;
-    border-radius: 5px;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background: #000;
-    color: #fff;
-  }
-
-  .hero .hero-content .hero-text .links{
-    background-color: aquamarine;
-    font-size: 24px;
-    color: #FFFFFF;
-  }
+body.light-theme .hero-text p{
+  color: #000 !important;
+}
 
 
-  .hero .hero-content .hero-text h1{
-    font-size: 40px;
-    color: #FFFFFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 50px;
-    min-width: 300px;
-  }
 
-  p{
-    font-size: 30px;
-    color: #FFFFFF;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-left: 50px;
-  }
+body.light-theme .highlight {
+  color: #0000FF;
+}
 
-  .btn{
-    color: #FFFFFF;
-    font-size: 20px;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: inherit;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
-  .project-buttons{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 30px;
-  }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
 
-  .project h3{
-    margin-top: 0px;
-  }
+.nav-links a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
 
-  .project{
-    margin-top: 20px;
-  }
+.nav-links a:hover {
+  color: #3498db;
+}
 
-  .forma, .proyectos-realizados{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: inherit;
+  transition: color 0.3s ease;
+}
 
-  .about, .presentacion__contenido__articulo{
-    width: 90%;
-    font-size: 1.5rem;
-    text-align: justify;
-    justify-content: center;
-    align-items: center;
-    padding-left: 50px;
-    font-weight: bold;
-    line-height: 1.5;
+.theme-btn:hover {
+  color: #3498db;
+}
+
+/* Estilo en modo oscuro */
+.dark-theme .links {
+  color: #000;
+}
+
+.dark-theme .btn{
+  color: #FFFF00;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.light-theme .btn{
+  color: #FF0000;
+  font-size: 20px;
+  font-weight: bold;
+}  
+
+.dark-theme .links:hover {
+  background-color: #ffffff;
+}
+
+/* Estilo en modo claro */
+.light-theme .links {
+  color: #000;
+}
+
+.light-theme .links:hover {
+  color: #ffffff;
+}  
+
+.hero{
+  padding-left: 50px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: space-between; /* Espacia entre texto y foto */
+  gap: 1rem; /* Espaciado entre texto y la imagen */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.hero-text {
+  flex: 1 1 40%; /* El texto ocupa el 60% del ancho */
+  flex-wrap: nowrap;
+}
+
+.profile-photo {
+  flex: 10 10 150px; /* La imagen ocupa un tamaño fijo */
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+
+.about, .skills, .hobbies, .experiencia, .proyectos, .formacion{
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.skill, .hobby {
+  flex: 1 1 calc(25% - 1rem);
+  padding: 1rem;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
+}
+
+.hero .hero-content .hero-text .links{
+  background-color: aquamarine;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+
+.hero .hero-content .hero-text h1{
+  font-size: 40px;
+  color: #FFFFFF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 50px;
+  min-width: 300px;
+}
+
+p{
+  font-size: 30px;
+  color: #FFFFFF;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left: 50px;
+}
+
+.btn{
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.project-buttons{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project h3{
+  margin-top: 0px;
+}
+
+.project{
+  margin-top: 20px;
+}
+
+.forma, .proyectos-realizados{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about, .presentacion__contenido__articulo{
+  width: 90%;
+  font-size: 1.5rem;
+  text-align: justify;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  font-weight: bold;
+  line-height: 1.5;
 }
 
 .about{
@@ -282,32 +282,31 @@ justify-content: center;
 }
 
 span{
-  color: #FFFF00;
+color: #FFFF00;
 }
 
 .skill{
-  background-color: #FFFFFF;
-  color: #000;
-  font-weight: bold;
+background-color: #FFFFFF;
+color: #000;
+font-weight: bold;
 }
 
 .skill:hover, .hobby:hover{
-  background-color: #FFFF00;
-  color: #000;
-  font-weight: bold;
+background-color: #FFFF00;
+color: #000;
+font-weight: bold;
 }
 
 body.light-theme .skill:hover, .hobby:hover{
-  background-color: #FFFF00;
-  color: #000;
-  font-weight: bold;
+background-color: #FFFF00;
+color: #000;
+font-weight: bold;
 }
 
 figcaption{
-  font-size: 30px;
-  font-weight: bold;
+font-size: 30px;
+font-weight: bold;
 }
 
 
 
- 
