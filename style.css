@@ -457,7 +457,15 @@ font-weight: bold;
     text-align: center;
   }
 
-
+  .forma, .proyectos-realizados{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  } 
+  
 }
 
 
