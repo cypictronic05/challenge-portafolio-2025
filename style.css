@@ -30,6 +30,8 @@ header {
   color: #FFF;
 }
 
+
+
 h2{
 text-align: center;
 font-size: 40px;
@@ -137,6 +139,7 @@ body.light-theme .highlight {
 /* Estilo en modo oscuro */
 .dark-theme .links {
   color: #000;
+  font-size: 20px;
 }
 
 .dark-theme .btn{
@@ -317,6 +320,19 @@ font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 50px;
   }    
+
+  .skills, .hobbies{
+    width: 90%;
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
  
 }
 
