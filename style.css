@@ -460,11 +460,29 @@ font-weight: bold;
   .forma, .proyectos-realizados{
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     gap: 10px;
     justify-content: center;
     align-items: center;
   } 
+
+  .forma img{
+    width: 100%;
+    height: auto;
+  }
+
+  .project img{
+    width: 100%;
+    height: auto;
+  }
+
+  .forma figcaption{
+    font-size: 16px;
+  }
+
+  .project h3{
+    font-size: 16px;
+  }
   
 }
 
