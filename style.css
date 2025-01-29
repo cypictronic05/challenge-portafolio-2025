@@ -59,7 +59,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .dark-theme {
-  background-color: #0000FF;
+  background-color: #0B1182;
   color: #ffffff;
 }
 
@@ -69,7 +69,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body.dark-theme .highlight {
-  color: #FFFF00;
+  color: #E9B214;
 }
 
 body.light-theme .skill{
@@ -157,7 +157,7 @@ body.light-theme .highlight {
 }
 
 .dark-theme .btn{
-  color: #FFFF00;
+  color: #E9B214;
   font-size: 20px;
   font-weight: bold;
 }
@@ -272,7 +272,7 @@ justify-content: center;
 }
 
 span{
-color: #FFFF00;
+color: #E9B214;
 }
 
 .skill{
@@ -282,13 +282,13 @@ font-weight: bold;
 }
 
 .skill:hover, .hobby:hover{
-background-color: #FFFF00;
+background-color: #E9B214;
 color: #000;
 font-weight: bold;
 }
 
 body.light-theme .skill:hover, .hobby:hover{
-background-color: #FFFF00;
+background-color: #E9B214;
 color: #000;
 font-weight: bold;
 }
