@@ -142,7 +142,7 @@ body.light-theme .hero-text p{
 }
 
 body.light-theme .highlight {
-  color: var(--color-accent-light);
+  color: var(--color-primary);
 }
 
 .navbar {
