@@ -376,6 +376,12 @@ figcaption{
     text-align: center;
 
   }
+
+  
+  .project img{
+    width: 500;
+    height: auto;
+  }
  
 }
 
